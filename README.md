@@ -1,5 +1,6 @@
 # Tmc - 1.12.2 Minecraft modpack
 Custom minecraft modpack played on private server with friends.
+Light technic modpack. (runnable with 4GB ram)
 
 # Install instructions:
 - Download zip of this repository;
