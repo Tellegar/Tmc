@@ -1,5 +1,5 @@
 # Tmc - 1.12.2 Minecraft modpack
-Custom minecraft modpack played on private server.
+Custom minecraft modpack played on private server with friends.
 
 # Install instructions:
 - Download zip of this repository;
