@@ -1202,23 +1202,167 @@ recipes.addShapeless(
 recipes.removeByRecipeName("hardcorequesting:quest_book");
 recipes.addShapeless("hardcorequesting-quest_book", <hardcorequesting:quest_book>, [<minecraft:book>, <ore:logWood>]);
 
+
+
+
 //
 //WOOT 
 //
 
-//advanced energy vell
+//remove recepty
+recipes.removeByRecipeName("woot:skull_zombie");
+recipes.removeByRecipeName("woot:skull_creeper");
+recipes.removeByRecipeName("woot:skull_skeleton");
+
+
+
+//basic power cell
+recipes.removeByRecipeName("woot:cell.tier_i");
+recipes.addShaped(
+	"woot-cell.tier_i", <woot:cell>, 
+		[[null, <minecraft:redstone_block>, null], 
+		[<enderio:block_cap_bank:1>, <woot:factorybase>, <enderio:block_cap_bank:1>], 
+		[null, <woot:factorycore:5>, null]]);
+
+//advanced power cell
 recipes.removeByRecipeName("woot:cell.tier_ii");
 recipes.addShaped(
 	"woot-cell.tier_ii", <woot:cell:1>, 
-		[[<woot:cell>, <enderio:block_cap_bank:1>, <woot:cell>], 
+		[[<woot:cell>, <enderio:block_cap_bank:2>, <woot:cell>], 
 		[<minecraft:redstone_block>, <woot:factorycore:5>, <minecraft:redstone_block>], 
-		[<woot:cell>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 48 as short}]}), <woot:cell>]]);
+		[<woot:cell>, <enderio:block_cap_bank:2>, <woot:cell>]]);
 
-//energy cell
+//premium power cell
+recipes.removeByRecipeName("woot:cell.tier_iii");
 recipes.addShaped(
-	"woot:cell.tier_i", <woot:cell>, 
-		[[null, <minecraft:redstone_block>, null], 
-		[null, <woot:factorybase>, null], 
-		[null, <woot:factorycore:5>, null]]);
+	"woot-cell.tier_iii", <woot:cell:2>, 
+		[[<draconicevolution:awakened_core>, <woot:cell:1>, <draconicevolution:awakened_core>], 
+		[<enderio:block_cap_bank:3>, <woot:factorycore:5>, <enderio:block_cap_bank:3>], 
+		[<woot:cell:1>, <minecraft:dragon_egg>, <woot:cell:1>]]);
+
+//rate I upgrade
+recipes.removeByRecipeName("woot:upgrade_rate_i");
+recipes.addShapeless(
+	"woot-upgrade_rate_i", <woot:upgrade>,
+		[<extrautils2:ingredients:16>, 
+		<woot:factorybase>, 
+		<woot:factorycore:2>, 
+		<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 48 as short}]})
+		]);
+
+//rate II upgrade
+recipes.removeByRecipeName("woot:upgrade_rate_ii");
+recipes.addShapeless(
+	"woot-upgrade_rate_ii", <woot:upgrade:1>, 
+		[<draconicevolution:wyvern_axe>,
+		<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 32 as short}]}),
+		<woot:factorybase>,
+		<woot:factorycore:3>, 
+		<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 48 as short}]})
+		]);
+
+//rate III upgrade
+recipes.removeByRecipeName("woot:upgrade_rate_iii");
+recipes.addShaped(
+	"woot-upgrade_rate_iii", <woot:upgrade:2>,
+		[[<draconicevolution:awakened_core>, <draconicadditions:chaotic_energy_core>, <draconicevolution:awakened_core>],
+		[<draconicevolution:chaotic_core>, <woot:factorybase>, <draconicevolution:chaotic_core>],
+		[<draconicevolution:draconic_axe>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 48 as short}]}), <woot:factorycore:4>]
+		]);
+
+//prism
+recipes.removeByRecipeName("woot:prism");
+recipes.addShaped(
+	"woot-prism", <woot:prism>, 
+		[[<ore:ingotDemonicMetal>, <draconicevolution:awakened_core>, <ore:craftingSunnarium>],
+		[<ore:ingotStellarAlloy>, <extrautils2:ineffableglass>, <ore:compressed8xCobblestone>], 
+		[<ore:dustEmerald>, <draconicevolution:draconic_core>, <draconicevolution:wyvern_core>]]);
+
+//factory heart
+recipes.removeByRecipeName("woot:factory_heart");
+recipes.addShaped(
+	"woot-factory_heart", <woot:factory>, 
+		[[<ore:blockDarkSteel>, <woot:factorycore>, <ore:blockDarkSteel>],
+		[<actuallyadditions:block_giant_chest_medium>, <woot:factorybase>, <actuallyadditions:block_giant_chest_medium>],
+		[<ore:blockDarkSteel>, <ore:oc:case3>, <ore:blockDarkSteel>]]);
+
+//mass I upgrade
+recipes.removeByRecipeName("woot:upgrade_mass_i");
+recipes.addShaped(
+	"woot-upgrade_mass_i", <woot:upgrade:9>, 
+		[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 35 as short}]})], 
+		[<extrautils2:opinium:8>, <draconicevolution:draconic_core>, <advanced_solar_panels:crafting:13>], 
+		[<draconicevolution:draconic_core>, <ore:compressed8xCobblestone>, <draconicevolution:draconic_core>]]);
+
+//mass II upgrade
+recipes.removeByRecipeName("woot:upgrade_mass_ii");
+recipes.addShaped(
+	"woot-upgrade_mass_ii", <woot:upgrade:10>, 
+		[[<woot:factorybase>, <woot:factorycore:3>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 35 as short}]})], 
+		[<extrautils2:opinium:8>, <draconicevolution:draconic_core>, <advanced_solar_panels:crafting:13>], 
+		[<draconicevolution:draconic_core>, <ore:compressed8xCobblestone>, <draconicevolution:draconic_core>]]);
+
+//mass III upgrade
+recipes.removeByRecipeName("woot:upgrade_mass_iii");
+recipes.addShaped(
+	"woot-upgrade_mass_iii", <woot:upgrade:11>, 
+		[[<woot:factorybase>, <woot:factorycore:4>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 35 as short}]})], 
+		[<extrautils2:opinium:8>, <draconicevolution:wyvern_core>, <advanced_solar_panels:crafting:13>], 
+		[<draconicevolution:wyvern_core>, <ore:compressed8xCobblestone>, <draconicevolution:wyvern_core>]]);
+
+//xp I upgrade
+recipes.removeByRecipeName("woot:upgrade_xp_i");
+recipes.addShaped(
+	"woot-upgrade_xp_i", <woot:upgrade:6>, 
+		[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 61 as short}]})],
+		[<minecraft:experience_bottle>, <enderio:item_xp_transfer>, <minecraft:experience_bottle>],
+		[<minecraft:experience_bottle>, <minecraft:experience_bottle>, <minecraft:experience_bottle>]]);
+
+//xp II upgrade
+recipes.removeByRecipeName("woot:upgrade_xp_ii");
+recipes.addShaped(
+	"woot-upgrade_xp_ii", <woot:upgrade:7>, 
+		[[<woot:factorybase>, <woot:factorycore:3>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 61 as short}]})],
+		[<minecraft:experience_bottle>, <enderio:item_xp_transfer>, <minecraft:experience_bottle>],
+		[<minecraft:experience_bottle>, <minecraft:experience_bottle>, <minecraft:experience_bottle>]]);
+
+//xp III upgrade
+recipes.removeByRecipeName("woot:upgrade_xp_iii");
+recipes.addShaped(
+	"woot-upgrade_xp_iii", <woot:upgrade:8>, 
+		[[<woot:factorybase>, <woot:factorycore:4>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 61 as short}]})],
+		[<minecraft:experience_bottle>, <enderio:item_xp_transfer>, <minecraft:experience_bottle>],
+		[<minecraft:experience_bottle>, <minecraft:experience_bottle>, <minecraft:experience_bottle>]]);
+
+//looting I upgrade
+recipes.removeByRecipeName("woot:upgrade_looting_i");
+recipes.addShaped(
+	"woot-upgrade_looting_i", <woot:upgrade:3>, 
+	[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 21 as short}]})],
+	[<ore:itemSkull>, <ore:itemSkull>, <ore:itemSkull>],
+	[<ore:itemSkull>, <ore:itemSkull>, <ore:itemSkull>]]);
+
+	//looting II upgrade
+recipes.removeByRecipeName("woot:upgrade_looting_ii");
+recipes.addShaped(
+	"woot-upgrade_looting_ii", <woot:upgrade:4>, 
+	[[<woot:factorybase>, <woot:factorycore:3>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 21 as short}]})],
+	[<ore:itemSkull>, <minecraft:skull:4>, <ore:itemSkull>],
+	[<ore:itemSkull>, <ore:itemSkull>, <ore:itemSkull>]]);
+
+	//looting I upgrade
+recipes.removeByRecipeName("woot:upgrade_looting_iii");
+recipes.addShaped(
+	"woot-upgrade_looting_iii", <woot:upgrade:5>, 
+	[[<woot:factorybase>, <woot:factorycore:4>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 21 as short}]})],
+	[<ore:itemSkull>, <enderio:block_enderman_skull:2>, <ore:itemSkull>],
+	[<ore:itemSkull>, <ore:itemSkull>, <ore:itemSkull>]]);
+
+
+
+
+
+
+
 
 
