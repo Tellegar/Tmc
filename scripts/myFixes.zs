@@ -1202,5 +1202,23 @@ recipes.addShapeless(
 recipes.removeByRecipeName("hardcorequesting:quest_book");
 recipes.addShapeless("hardcorequesting-quest_book", <hardcorequesting:quest_book>, [<minecraft:book>, <ore:logWood>]);
 
+//
+//WOOT 
+//
+
+//advanced energy vell
+recipes.removeByRecipeName("woot:cell.tier_ii");
+recipes.addShaped(
+	"woot-cell.tier_ii", <woot:cell:1>, 
+		[[<woot:cell>, <enderio:block_cap_bank:1>, <woot:cell>], 
+		[<minecraft:redstone_block>, <woot:factorycore:5>, <minecraft:redstone_block>], 
+		[<woot:cell>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 48 as short}]}), <woot:cell>]]);
+
+//energy cell
+recipes.addShaped(
+	"woot:cell.tier_i", <woot:cell>, 
+		[[null, <minecraft:redstone_block>, null], 
+		[null, <woot:factorybase>, null], 
+		[null, <woot:factorycore:5>, null]]);
 
 
