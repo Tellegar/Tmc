@@ -1350,7 +1350,7 @@ recipes.addShaped(
 	[<ore:itemSkull>, <minecraft:skull:4>, <ore:itemSkull>],
 	[<ore:itemSkull>, <ore:itemSkull>, <ore:itemSkull>]]);
 
-	//looting I upgrade
+	//looting III upgrade
 recipes.removeByRecipeName("woot:upgrade_looting_iii");
 recipes.addShaped(
 	"woot-upgrade_looting_iii", <woot:upgrade:5>, 
@@ -1358,9 +1358,109 @@ recipes.addShaped(
 	[<ore:itemSkull>, <enderio:block_enderman_skull:2>, <ore:itemSkull>],
 	[<ore:itemSkull>, <ore:itemSkull>, <ore:itemSkull>]]);
 
+//efficiency I upgrade
+recipes.removeByRecipeName("woot:upgrade_efficiency_i");
+recipes.addShaped(
+	"woot-upgrade_efficiency_i", <woot:upgradeb>, 
+		[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 32 as short}]})],
+		[<actuallyadditions:item_crystal>, <ore:oc:batteryUpgrade1>, <actuallyadditions:item_crystal>],
+		[<ore:blockEnchantedMetal>, <actuallyadditions:item_crystal>, <ore:blockEnchantedMetal>]]);
 
+//efficiency II upgrade
+recipes.removeByRecipeName("woot:upgrade_efficiency_ii");
+recipes.addShaped(
+	"woot-upgrade_efficiency_ii", <woot:upgradeb:1>, 
+		[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 32 as short}]})],
+		[<actuallyadditions:block_crystal>, <ore:oc:batteryUpgrade2>, <actuallyadditions:block_crystal>],
+		[<ore:blockEnchantedMetal>, <actuallyadditions:block_crystal>, <ore:blockEnchantedMetal>]]);
 
+//efficiency III upgrade
+recipes.removeByRecipeName("woot:upgrade_efficiency_iii");
+recipes.addShaped(
+	"woot-upgrade_efficiency_iii", <woot:upgradeb:2>, 
+		[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 32 as short}]})],
+		[<actuallyadditions:block_crystal_empowered>, <ore:oc:batteryUpgrade3>, <actuallyadditions:block_crystal_empowered>],
+		[<ore:blockEnchantedMetal>, <actuallyadditions:block_crystal_empowered>, <ore:blockEnchantedMetal>]]);
 
+//decapitate I upgrade
+recipes.removeByRecipeName("woot:upgrade_decapitate_i");
+recipes.addShaped(
+	"woot-upgrade_decapitate_i", <woot:upgrade:12>, 
+		[[<woot:factorybase>, <woot:factorycore:2>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]})],
+		[<ore:blockSoularium>, <ore:skullZombieElectrode>, <ore:blockSoularium>],
+		[<ore:blockSoularium>, <ore:ingotSilver>, <ore:blockSoularium>]]);
+
+//decapitate II upgrade
+recipes.removeByRecipeName("woot:upgrade_decapitate_ii");
+recipes.addShaped(
+	"woot-upgrade_decapitate_ii", <woot:upgrade:13>, 
+		[[<woot:factorybase>, <woot:factorycore:3>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 16 as short}]})],
+		[<ore:blockSoularium>, <ore:skullSkeletalContractor>, <ore:blockSoularium>],
+		[<ore:blockSoularium>, <ore:ingotEnergeticSilver>, <ore:blockSoularium>]]);
+
+//decapitate III upgrade
+recipes.removeByRecipeName("woot:upgrade_decapitate_iii");
+recipes.addShaped(
+	"woot-upgrade_decapitate_iii", <woot:upgrade:14>, 
+		[[<woot:factorybase>, <woot:factorycore:4>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 16 as short}]})],
+		[<ore:blockSoularium>, <ore:skullEnderResonator>, <ore:blockSoularium>],
+		[<ore:blockSoularium>, <ore:ingotVividAlloy>, <ore:blockSoularium>]]);
+
+//factory flesh casing
+recipes.removeByRecipeName("woot:structure_block_0");
+recipes.addShaped(
+	"woot-structure_block_0", <woot:structure>, 
+		[[null, <minecraft:rotten_flesh>, null],
+		[<ore:dropofevil>, <woot:factorybase>, <ore:dropofevil>],
+		[null, <minecraft:nether_wart_block>, null]]);
+
+//factory bone casing
+recipes.removeByRecipeName("woot:structure_block_1");
+recipes.addShaped(
+	"woot-structure_block_1", <woot:structure:1>, 
+		[[null, <minecraft:bone>, null],
+		[<minecraft:dye:15>, <woot:factorybase>, <minecraft:dye:15>],
+		[null, <minecraft:bone_block>, null]]);
+
+//factory blaze casing
+recipes.removeByRecipeName("woot:structure_block_2");
+recipes.addShaped(
+	"woot-structure_block_2", <woot:structure:2>,
+		[[null, <minecraft:blaze_rod>, null], 
+		[<ore:compressed3xNetherrack>, <woot:factorybase>, <ore:compressed3xNetherrack>], 
+		[null, <minecraft:blaze_rod>, null]]);
+
+//factory ender casing
+recipes.removeByRecipeName("woot:structure_block_3");
+recipes.addShaped(
+	"woot-structure_block_3", <woot:structure:3>, 
+		[[null, <minecraft:ender_pearl>, null], 
+		[<actuallyadditions:block_misc:6>, <woot:factorybase>, <actuallyadditions:block_misc:6>],
+		[null, <ore:itemEnderCrystalPowder>, null]]);
+
+//factory ender casing
+recipes.removeByRecipeName("woot:structure_block_3_alt");
+recipes.addShaped(
+	"woot:structure_block_3_alt", <woot:structure:3>, 
+		[[null, <woot:shard:5>, null], 
+		[<actuallyadditions:block_misc:6>, <woot:factorybase>, <actuallyadditions:block_misc:6>],
+		[null, <ore:itemEnderCrystalPowder>, null]]);
+
+//factory nether casing
+recipes.removeByRecipeName("woot:structure_block_4");
+recipes.addShaped(
+	"woot-structure_block_4", <woot:structure:4>, 
+		[[<ore:compressed8xCobblestone>, <woot:shard:3>, <ore:compressed8xCobblestone>],
+		[<ore:netherStar>, <woot:factorybase>, <ore:netherStar>],
+		[<ore:compressed8xCobblestone>, <ore:blockDraconiumAwakened>, <ore:compressed8xCobblestone>]]);
+
+//factory nether casing alt recipe
+recipes.removeByRecipeName("woot:structure_block_4_alt");
+recipes.addShaped(
+	"woot-structure_block_4_alt", <woot:structure:4>, 
+		[[<ore:compressed8xCobblestone>, <woot:shard:6>, <ore:compressed8xCobblestone>],
+		[<ore:netherStar>, <woot:factorybase>, <ore:netherStar>],
+		[<ore:compressed8xCobblestone>, <ore:blockDraconiumAwakened>, <ore:compressed8xCobblestone>]]);
 
 
 
