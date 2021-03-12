@@ -1441,7 +1441,7 @@ recipes.addShaped(
 //factory ender casing
 recipes.removeByRecipeName("woot:structure_block_3_alt");
 recipes.addShaped(
-	"woot:structure_block_3_alt", <woot:structure:3>, 
+	"woot-structure_block_3_alt", <woot:structure:3>, 
 		[[null, <woot:shard:5>, null], 
 		[<actuallyadditions:block_misc:6>, <woot:factorybase>, <actuallyadditions:block_misc:6>],
 		[null, <ore:itemEnderCrystalPowder>, null]]);
